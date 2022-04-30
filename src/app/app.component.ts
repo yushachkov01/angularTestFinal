@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Product, DEFAULT_PRODUCTS } from './galery/myInfo';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'myWebsite';
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+
+  public array: Array<Product> = DEFAULT_PRODUCTS;
+
+
+  modal = false;
 }
