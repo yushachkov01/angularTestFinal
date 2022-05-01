@@ -11,9 +11,14 @@
     </p>
     <div class="container">
       <ya-map [center]="[55.751952, 37.600739]" [zoom]="12">
-        <ya-placemark [geometry]="[55.751952, 37.600739]"></ya-placemark>
+        <ya-placemark 
+        (yaclick)="onMarkerClick()"
+        [geometry]="getCoordinates()" >
+  </ya-placemark>
       </ya-map>
+      
     </div>
+    
     <button class="btn" (click)="close.emit()">Close</button>
   </nav>
 </div>

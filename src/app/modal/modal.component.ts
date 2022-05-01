@@ -12,6 +12,17 @@ export class ModalComponent implements OnInit {
   @Input() product: Product
   @Output() close = new EventEmitter<void>();
 
+  public onMarkerClick(){
+    alert("на метку нажали")
+    
+    console.log("--------------->",  );
+  }
+
+  public getCoordinates() {
+    if (this.product) return this.product.coordinates;
+    return [ 55.876448, 37.428645]
+  }
+
   constructor() {}
 
   ngOnInit(): void {
