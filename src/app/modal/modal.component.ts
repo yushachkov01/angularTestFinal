@@ -12,10 +12,21 @@ export class ModalComponent implements OnInit {
   @Input() product: Product
   @Output() close = new EventEmitter<void>();
 
+  public isFormShown: boolean = false
+
   public onMarkerClick(){
-    alert("на метку нажали")
+    // alert("на метку нажали")
+    this.isFormShown = true
     
-    console.log("--------------->",  );
+    console.log("--------------->" );
+  }
+  public isFormLoan: boolean = true
+
+  public takeALoan(){
+    alert(`Поздравляю, на тебя взят кредит!`)
+    this.isFormLoan = true
+    
+    console.log("Иу" );
   }
 
   public getCoordinates() {

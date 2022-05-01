@@ -15,11 +15,36 @@
         (yaclick)="onMarkerClick()"
         [geometry]="getCoordinates()" >
   </ya-placemark>
-      </ya-map>
-      
-    </div>
-    
+</ya-map>
+
+<div class="myCardYandex" 
+(click)="onMarkerClick()">
+
+
+
+<form action="" class="railway" *ngIf="isFormShown">
+  <div class="stripes-block">
+  <div class="line"></div>
+  </div>
+  <h3>Информация о покупателе</h3>
+  <div class="form-group">
+  <input type="text" id="name" required><label for="name">Имя</label>
+  <input type="text" id="pass" required><label for="pass">Паспортные данные</label>
+  <input type="email" id="email" required><label for="email">Email</label>
+  <input type="text" id="phone" required><label for="phone">Номер телефона</label>
+  </div>
+  <div class="submit-block">
+  <div class="submit-button">
+  <i class="fa fa-train" aria-hidden="true"></i><br>
+  <input type="submit" value="Отправить" (click)="takeALoan()">
+  </div>
+  </div>
+  </form>
+</div>
+</div>
+
     <button class="btn" (click)="close.emit()">Close</button>
   </nav>
+
 </div>
 
