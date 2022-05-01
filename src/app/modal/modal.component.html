@@ -4,11 +4,16 @@
 
 <div class="modal">
   <nav class="navbar">
-    <h1>{{ product.name }}</h1>
+    <h1>{{ title }}</h1>
     <h1>Описание товара:</h1>
     <p> 
       Игрушка антистресс нового поколения, которая понравится, как детям, так и взрослым.
     </p>
+    <div class="container">
+      <ya-map [center]="[55.751952, 37.600739]" [zoom]="12">
+        <ya-placemark [geometry]="[55.751952, 37.600739]"></ya-placemark>
+      </ya-map>
+    </div>
     <button class="btn" (click)="close.emit()">Close</button>
   </nav>
 </div>

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Product, DEFAULT_PRODUCTS } from './galery/myInfo';
+import {Product, DEFAULT_PRODUCTS } from './galery/myInfo';
+
 
 
 @Component({
@@ -13,7 +14,7 @@ export class AppComponent {
   }
 
   public array: Array<Product> = DEFAULT_PRODUCTS;
-
+  
 
   modal = false;
 }

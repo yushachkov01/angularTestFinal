@@ -10,9 +10,14 @@
     padding: 1rem;
     background: #fff;
     margin-top: 3rem;
-    position: fixed;
+    position: absolute;
     left: 50%;
     transform: translate(-50%, 0);
     width: 800px;
     height: 800px;
  } 
+
+ .container {
+   width: 700px;
+   height: 500px;
+ }

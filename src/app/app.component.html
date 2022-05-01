@@ -13,15 +13,14 @@
         <div class="stars"></div>
         <h3 class="product-title">{{item.name}}</h3>
         <div class="price">&#8381; {{item.price}}</div>
-        
 
-         <app-modal 
-         [product]="myProduct"
-        *ngIf="modal"
-        title="modal window"
-        (close)="modal = false"
-        ></app-modal>
-     </div>
+      </div>
+    </div>
   </div>
-</div>
-
+  
+  <app-modal 
+  [product]="Product"
+  *ngIf="modal"
+  title="modal window"
+  (close)="modal = false"
+  ></app-modal>
