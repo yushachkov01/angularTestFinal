@@ -6,7 +6,7 @@ import { Product } from '../galery/myInfo';
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.css']
 })
-export class ModalComponent implements OnInit {
+export class ModalComponent {
 
   @Input() title="Default title"
   @Input() product: Product
@@ -23,7 +23,7 @@ export class ModalComponent implements OnInit {
   public isFormLoan: boolean = true
 
   public takeALoan(){
-    alert(`Поздравляю, на тебя взят кредит!`)
+    alert(`Поздравляю, Артем, на тебя взят кредит!`)
     this.isFormLoan = true
     
     console.log("Иу" );
@@ -33,10 +33,4 @@ export class ModalComponent implements OnInit {
     if (this.product) return this.product.coordinates;
     return [ 55.876448, 37.428645]
   }
-
-  constructor() {}
-
-  ngOnInit(): void {
-  }
-
 }

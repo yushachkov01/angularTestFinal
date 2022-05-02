@@ -19,6 +19,7 @@
     "@angular/platform-browser-dynamic": "~13.3.0",
     "@angular/router": "~13.3.0",
     "angular8-yandex-maps": "^13.2.0",
+    "ng-modules": "^3.0.11",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "ymaps": "^0.2.1",

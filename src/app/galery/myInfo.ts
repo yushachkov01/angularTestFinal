@@ -15,3 +15,5 @@ export const DEFAULT_PRODUCTS = new Array<Product>(50).fill({
     adress:"Moscow",
     coordinates: [37.428645, 55.876448, 37.835122, 55.653490]
 });
+
+

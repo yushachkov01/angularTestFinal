@@ -6,7 +6,9 @@ import {Product, DEFAULT_PRODUCTS } from './galery/myInfo';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  template: `<alert type="info">ng2-bootstrap hello world!</alert>`
+
 })
 export class AppComponent {
   title(title: any) {
