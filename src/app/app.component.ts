@@ -15,8 +15,8 @@ export class AppComponent {
     throw new Error('Method not implemented.');
   }
 
-  public array: Array<Product> = DEFAULT_PRODUCTS;
+  // public array: Array<Product> = DEFAULT_PRODUCTS;
   
-
+  
   modal = false;
 }

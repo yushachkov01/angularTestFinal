@@ -10,7 +10,7 @@ export class ModalComponent {
 
   @Input() title="Default title"
   @Input() product: Product
-  @Output() close = new EventEmitter<void>();
+  @Output() close = new EventEmitter();
 
   public isFormShown: boolean = false
 
@@ -20,14 +20,15 @@ export class ModalComponent {
     
     console.log("--------------->" );
   }
+
   public isFormLoan: boolean = true
 
-  public takeALoan(){
-    alert(`Поздравляю, Артем, на тебя взят кредит!`)
-    this.isFormLoan = true
+  // public takeALoan(){
+  //   alert(`Поздравляю,на тебя взят кредит!`)
+  //   this.isFormLoan = true
     
-    console.log("Иу" );
-  }
+  //   console.log("Иу" );
+  // }
 
   public getCoordinates() {
     if (this.product) return this.product.coordinates;
