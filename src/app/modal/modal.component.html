@@ -1,0 +1,50 @@
+
+
+<div class="backdrop"></div>
+
+<div class="modal">
+  <nav class="navbar">
+    <h1>{{ product.name }}</h1>
+    <h1>Описание товара:</h1>
+    <p> 
+      {{product.description}}
+    </p>
+    <div class="container">
+      
+      <ya-map [center]="[55.751952, 37.600739]" [zoom]="10">
+        <ya-placemark 
+        (yaclick)="onMarkerClick()"
+        [geometry]="getCoordinates()" >
+        </ya-placemark>
+      </ya-map>
+
+<div class="myCardYandex" 
+(click)="onMarkerClick()">
+
+
+
+<form action="" class="railway" [formGroup]="form" *ngIf="isFormShown">
+  <div class="stripes-block">
+  <div class="line"></div>
+  </div>
+  <h3>Информация о покупателе</h3>
+  <div class="form-group">
+  <input type="text" id="name" formControlName="name" required><label for="name">Имя</label>
+  <input type="email" id="email" formControlName="email" required><label for="email">Email</label>
+  <input type="text" id="phone" formControlName="phone" required><label for="phone">Номер телефона</label>
+  </div>
+  <div class="submit-block">
+  <div class="submit-button">
+  <i class="fa fa-train" aria-hidden="true"></i><br>
+  <input type="submit" value="Отправить" (click)="submitForm()">
+  </div>
+  </div>
+  </form>
+</div>
+</div>
+
+    <button class="btn" (click)="close.emit()">Close</button>
+  </nav>
+
+</div>
+

@@ -1,0 +1,52 @@
+<!-- <nav>
+  <div class="nav-wrapper grey darken-1">
+    <a href="#" class="brand-logo">NewBorn</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a>Вход</a></li>
+      <li><a>Регистрация</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="auth-block">
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">Войти в систему</span>
+      <div class="input-field">
+        <input id="email" type="email" required>
+        <label for="email">Email:</label>
+      </div>
+
+      <div class="input-field">
+        <input id="password" type="password" required>
+        <label for="password">Пароль:</label>
+      </div>
+    </div>
+    <div class="card-action">
+      <button class="modal action btn waves-effect">Войти</button>
+    </div>
+  </div>
+</div>
+ -->
+
+
+
+
+  <div class="container signin">
+  <nav>
+  <div class="nav-wrapper grey darken-1">
+    <a routerLink="/" class="brand-logo">Главная</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li routerLinkActive="active">
+        <a routerLink="login">Вход</a>
+      </li>
+      <li routerLinkActive="/active">
+        <a routerLink="/register">Регистрация</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+  </div>
+  <div class="auth-outlet">
+    <router-outlet></router-outlet>
+  </div>

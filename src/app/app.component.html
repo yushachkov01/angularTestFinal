@@ -1,0 +1,27 @@
+<div *ngFor="let item of array; index as i">
+  <div class="border">
+    <div class="wrap">
+      <div class="product-wrap">
+        <a href=""><img src={{item.image}}></a>
+      </div>
+      <div class="loop-action">
+        <button href="" class="add-to-cart" (click)="onProductClick(item)">Быстрый просмотр</button>
+        <a href="" class="loop-add-to-cart">В корзину</a>
+      </div>
+    </div>
+      <div class="product-info">
+        <div class="stars"></div>
+        <h3 class="product-title">{{item.name}}</h3>
+        <div class="price">&#8381; {{item.price}}</div>
+
+      </div>
+    </div>
+  </div>
+  
+  <app-modal 
+  class="modal-window-container"
+  [product]="productSelected"
+  *ngIf="modal"
+  title="modal window"
+  (close)="modal = false"
+  ></app-modal>
